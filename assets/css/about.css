@@ -1,0 +1,138 @@
+.herosection{
+    height: 550px;
+}
+#img{
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('img/2.jpg');
+    background-size: cover;
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.jumbotron{
+    margin: auto;
+    position: absolute;
+    /* background-color: rgb(117, 81, 81); */
+    top: 230px;
+    left: 0;
+    right: 0;
+   text-align: center;
+}
+.jumbotron p{
+    font-size: 80px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+.conten {
+    margin: auto;
+    width: 1000px;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    /* background-color: #888; */
+}
+.conten h1{
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.conten .tex1{
+    color: rgb(68, 68, 68);
+    /* float: left; */
+    margin: 30px 10px 10px 10px;
+    /* border: 1px solid #fff; */
+    width: 700px;
+    font-size: 20px;
+    font: 20px/28px arial, sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
+}
+
+.conten .tex2{
+    color: rgb(68, 68, 68);
+    float: right;
+    margin: 30px 10px 10px 10px;
+    /* border: 1px solid #fff; */
+    width: 700px;
+    font: 20px/28px arial, sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 14px;
+    /* display: flex; */
+    
+    /* border: 1px solid salmon; */
+    background-color: rgb(51, 51, 51);
+}
+.ket:nth-child(1){
+    padding-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    /* border: 1px solid    red; */
+    justify-content: space-evenly;
+}
+.ket ul:nth-child(1) h3{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+.ket ul:nth-child(2) h3{
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+
+.ket ul li {
+    padding: 3px;
+}
+.ket ul li a {
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    color: #999;
+    font-size: 15px;
+    font-weight: bold;
+}
+.ket ul li a:hover{
+    color: white;
+}
+.copyright{
+    display: inline;
+    color: #fff;
+    text-align: center;
+}
+/* clear float */
+
+.clear::after,.clear::before{
+    content: '';
+    display: table;
+}
+.clear::after{
+    clear: both;
+}
+.clear{
+    *zoom: 1;
+}

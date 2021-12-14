@@ -1,0 +1,43 @@
+.sechdule{
+    /* border: 1px solid black; */
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    width: 780px;
+    margin: auto;
+    padding-bottom: 10px;
+    height: 500px;
+}
+.sechdule .table{
+    width: 100%;
+    /* border: 1px solid black; */
+    font-family: 'Work Sans', sans-serif;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 110px;
+    font-size: 30px;
+}
+.table h1{
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: underline;
+}
+tr th{
+    font-weight: bold;
+    background-color: aqua;
+}
+/* .border{
+    border: 1px solid black;
+} */
+
+
+
+
+
+
+
+
+

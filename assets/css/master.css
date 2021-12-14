@@ -1,0 +1,294 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}absolute
+
+/* end reset  */
+
+body,html{
+    background-color: #eaeaea;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    padding: 8px;
+    align-items: center;
+    background-color:#fff;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    /* border-bottom: 1px solid #000; */
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+.core{
+    padding: 3px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 180px;
+    /* border: 1px solid black; */
+    /* background-color: aqua; */
+}
+.core #nama{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    float: right;
+   font-family: 'Rubik', sans-serif;
+   font-size: 25px;
+   font-weight: bold;
+   top: 0;
+}
+#logo{
+    height: 60px;
+    width: 115px;
+    background-image: url('img/logo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* menu toggle */
+
+nav .menu-toggle{
+    display: flex;
+    width: 40px;
+    height: 35px;
+    flex-direction: column;
+    padding: 2px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    position: relative;
+    /* border: 1px solid black; */
+}
+nav .menu-toggle input{
+    position: absolute;
+    height: 25px;
+    width: 50px;
+    left: -9px;
+    z-index: 2;
+    opacity: 0;
+    /* left: -5; */
+}
+nav .menu-toggle span{
+    border-radius: 5px;
+    height: 4px;
+    width: 100%;
+    color: #000;
+    background-color: #000;
+    transition: all 0.5s;
+   
+}
+
+/* end menu toggle */
+
+/* cari span didalam class menu togle select anak ke 2 dari menu toggle */
+nav .menu-toggle span:nth-child(2){
+    transform-origin: 0 0;/*ini akan menguabh poros rorate nya menjadi di samping kiri val1` sumbu x val 2 sumbu y*/
+}
+nav .menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;/*ini akan menguabh poros rorate nya menjadi di samping kanan val1` sumbu x val 2 sumbu y*/
+}
+
+
+/* cari input di dalam menu toggle klo inputnya di check maka cari siblings/anak ke 2 dari parent element menu toggle kasih dia properti css sbg brkt */
+nav .menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px,-4px);
+
+}
+nav .menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(0, 4px);
+
+}
+nav .menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+
+}
+
+
+
+/* toggle animation */
+
+
+
+/* end toggle anoimation */
+
+/* nav slide */
+nav ul{
+    width: 350px;
+    display: flex;
+
+}
+nav ul li{
+    text-align: center;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    width: 100%;
+    height: 50px;
+    line-height: 40px;
+    /* padding: 15px; */
+}
+nav ul li a{
+    align-items: center;
+    font-size: 20px;
+    padding: 3px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid aqua; */
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.nav-slide{
+    padding: 4px;
+    background-color: #fff;
+    /* border: 2px solid red; */
+    display: none;
+    height: 463px;
+    position: absolute;
+    top: 85px;
+    right: 0;
+    
+}
+.nav-slide .list-slide ul{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.nav-slide .list-slide ul li:hover{
+    box-shadow: 5px 5px 5px #000;
+    
+  
+}
+
+/* end menu dlide */
+
+
+/* active menu */
+.active{
+    background-color: #000;
+    transition: all 0.8s;  
+    color: #fff; 
+    border: 1px solid #fff;
+}
+
+
+/* end active */
+
+
+
+
+
+
+
+
+/* footer */
+
+
+footer{
+    padding: 14px;
+    /* display: flex; */
+    
+    /* border: 1px solid salmon; */
+    background-color: rgb(51, 51, 51);
+}
+.ket:nth-child(1){
+    padding-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    /* border: 1px solid    red; */
+    justify-content: space-evenly;
+}
+.ket ul:nth-child(1) h3{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+.ket ul:nth-child(2) h3{
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+
+.ket ul li {
+    padding: 3px;
+}
+.ket ul li a {
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    color: #999;
+    font-size: 15px;
+    font-weight: bold;
+}
+.ket ul li a:hover{
+    color: white;
+}
+.copyright{
+    display: inline;
+    color: #fff;
+    text-align: center;
+}
+/* clear float */
+
+.clear::after,.clear::before{
+    content: '';
+    display: table;
+}
+.clear::after{
+    clear: both;
+}
+.clear{
+    *zoom: 1;
+}

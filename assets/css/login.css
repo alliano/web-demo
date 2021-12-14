@@ -1,0 +1,81 @@
+.bg{
+    height: 100%;
+    width: 100%;
+}
+.bg .img{
+    height: 602px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url('img/bg-courses.jpg');
+    background-repeat: no-repeat;
+}
+.container{
+    padding-top: 100px;
+    border: 1px solid black;
+    
+    /* height: 1000px; */
+    
+}
+.form{
+    position: absolute;
+    top: 150px;
+    background-color: rgba(216, 216, 216, 0.535);
+    /* height: 300px;=-==== */
+    margin: 10px auto;
+    width: 35%;
+    box-sizing: border-box;
+    height: 400px;
+    justify-content: space-evenly;
+    display: flex;
+    left: 300px;
+    right: 300px;
+    flex-direction: column;
+    border: 1px solid black;
+      /* margin: 50px auto; */
+    /* text-align: center; */
+}
+.field{
+
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: max-content;
+  
+}
+.input{
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+}
+.input input{
+    margin-top: 3px;
+    height: 30px;
+}
+.input label{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.inpcontrol{
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    width: max-content;
+    /* border: 1px solid black; */
+    /* background-color: #000; */
+   
+}
+.btn{
+    width: max-content;
+    margin: 10px auto;
+    
+}
+.btn button{
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+.icon{
+    margin-top: 50px;
+    text-align: center;
+    
+}

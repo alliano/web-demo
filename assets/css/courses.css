@@ -1,0 +1,146 @@
+.herosection{
+    height: 100%;
+    width: 100%;
+}
+#img-courses{
+    height: 780px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0.2)), url('img/bg-courses.jpg');
+}
+
+.container{
+    font-family: 'Rubik', sans-serif;
+    opacity: 0.8;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    width: 800px;
+    /* border: 1px solid red; */
+}
+.container .judul{
+    height: max-content;
+    width: max-content;
+    color: #fff;
+    /* border: 1px solid white; */
+}
+.container h1{
+   height: 150px;
+    color: #fff;
+    /* border: 1px solid white; */
+}
+.container div{
+    /* text-align: center; */
+    line-height: 200px;
+    justify-content: center;
+    display: flex;
+    
+    font-size: 30px;
+    width: 800px;
+    height: 200px;
+    /* border: 1px solid red; */
+}
+.kotak1{
+    background-color: yellow;
+    width: max-content;
+    /* border: 1px solid red; */
+}
+.kotak2{
+    background-color: indigo;
+    width: max-content;
+    /* border: 1px solid red; */
+}
+.kotak3{
+    background-color: #fff;
+    width: max-content;
+    /* border: 1px solid red; */
+}
+.kotak4{
+    background-color: skyblue;
+    width: max-content;
+    /* border: 1px solid red; */
+}
+
+
+
+.tumbnail{
+    /* border: 2px solid black; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: rgb(197, 197, 197);
+    height: 300px;
+}
+.tumbnail div{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    margin: auto;
+    
+
+}
+#tumbnail-title{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+.tumbnail .card{
+    height: 220px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.card #img1{
+    border-radius: 10px;
+    position: relative;
+    height: 190px;
+    width: 200px;
+    background-image: url('img/js.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card #img2{
+    border-radius: 10px;
+    position: relative;
+    width: 200px;
+    height: 190px;
+    background-position: -50px 0;
+    background-image: url('img/java.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card #img3{
+    border-radius: 10px;
+    width: 200px;
+    height: 190px;
+    background-image: url('img/ts.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card #img4{
+    border-bottom: 1px solid #000;
+    border-radius: 10px;
+    width: 200px;
+    height: 190px;
+    background-image: url('img/myql.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tumbnail a{
+    text-decoration: none;
+}
+.tumbnail h3{
+    border-top: 1px solid #000;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;  
+    font-size: 20px;
+    margin-top: 10px; 
+}
+
+

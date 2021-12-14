@@ -1,0 +1,138 @@
+.herosection{
+    height: 550px;
+}
+#img{
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('img/1.jpg');
+    background-size: cover;
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.jumbo{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 230px;
+    z-index: -0;
+    /* border: 1px solid red; */
+}
+.jumbo p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+    /* transform: translate(-50%, -50%); */
+}
+.jumbo span{
+    color: #fff;
+    background-color: transparent;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #fff;
+    font-size: 30px;
+    cursor: pointer;
+    /* opacity: 0.4; */
+
+}
+.jumbo span:hover{
+    color: black;
+    background-color:rgb(228, 228, 228);
+}
+.tumbnail {
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+    margin-top: 5px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.tumbnail .judul{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+.tumbnail .member{
+    padding: 20px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    display: flex;
+}
+.card{
+    background-color: #fff;
+    width: 150px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    transition: 0.5s;
+}
+.card:hover{
+    position: relative;
+    top: -20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.6s;
+}
+.card p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+
+}
+
+.img1{
+    border-radius: 10%;
+    height: 150px;
+    width: 145px;
+    background-size: cover;
+    background-image: url('img/gogle.jpeg');
+}
+.img2{
+    border-radius: 10%;
+    height: 150px;
+    width: 145px;
+    background-size: cover;
+    background-image: url('img/nasa.png');
+    background-position: -10px 0;
+}
+.img3{
+    border-radius: 10%;
+    height: 150px;
+    width: 145px;
+    background-size: cover;
+    background-image: url('img/hostinger.jpeg');
+    background-position: -15px 0;
+}
+.img4{
+    border-radius: 10%;
+    height: 150px;
+    width: 145px;
+    background-size: cover;
+    background-image: url('img/aws.jpeg');
+}
+
+.img5{
+    border-radius: 10%;
+    height: 150px;
+    width: 145px;
+    background-size: cover;
+    background-image: url('img/linux.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.img6{
+    border-radius: 10%;
+    height: 150px;
+    width: 145px;
+    background-size: cover;
+    background-image: url('img/dicoding.png');
+}

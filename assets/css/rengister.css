@@ -1,0 +1,52 @@
+
+.icon{
+    margin-top: 20px;
+    text-align: center;
+}
+.hero-section #img{
+    
+    height: 700px;
+    background-image: url('img/bg-courses.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.form-control{
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.371);
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    left: 350px;
+    /* margin: auto; */
+}
+.input-1{
+    padding: 3px;
+    /* border: 5px solid black; */
+    width: 70%;
+    height: 250px;
+    margin: auto;
+}
+.group{
+    margin-top: 5px;
+    flex-direction: column;
+    display: flex;
+}
+.group input{
+    margin-top: 3px;
+    height: 25px;
+}
+.group label{
+    font-size: 20px;
+}
+.submit{
+    margin-top: 10px;
+    text-align: center;
+}
+.submit button{
+    padding: 6px;
+    width: 50%;
+    font-size: 18px;
+}
