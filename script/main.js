@@ -14,8 +14,8 @@ $(document).ready(function () {
         for (let i = 0; i < list.length; i++) {
             $(list[i]).click(function () {
                 if (i === 0) {
-                    localStorage.setItem('page', 'home');
-                     window.location.href = `home.html`
+                    localStorage.setItem('page', 'index');
+                     window.location.href = `index.html`
                 } else {
                     if (i === 1) {
                         localStorage.setItem('page', 'contac');
