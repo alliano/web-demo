@@ -57,10 +57,8 @@ $(document).ready(function () {
         url: "https://www.googleapis.com/youtube/v3/playlists?part=snippet,contentDetails,player&id=PLFIM0718LjIWXagluzROrA-iBY9eeUt4w&key=AIzaSyCsy7fIaTA90lta3gvp1FFsgiVdHYv-8I8",
         data: "json",
         success: function (response) {
-            console.log(response.items[0]);
 
             $('#vidio').html(response.items[0].player.embedHtml);
-            // $('.card p').tex()
         }
     });
 

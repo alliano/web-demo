@@ -87,4 +87,8 @@
             footer[0].innerHTML = ell;
             
         })();
+
+
+
+        
         AOS.init();
