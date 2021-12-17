@@ -77,7 +77,8 @@ $(document).ready(function () {
     $('.play-vidio iframe').css({
         "width" : "800px",
         "height": "700px",
-        "border" : "2px solid aqua"
+        "border": "2px solid aqua",
+        "position" : "absolute"
     })
 
 
