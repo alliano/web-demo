@@ -37,18 +37,16 @@ document.addEventListener("click", function (args) {
         }
     
         const data = getDAtaUser(passwordBuffer.join(""), userBuffer, emailBuffer);
-        console.log(data);
         save(data);
         window.location.href = "/courses.html";
         
     }
-    
-    
+     
 })
 
 document.addEventListener("click", function (arg) {
     if (arg.target.classList.contains("login")) {
-        const getData = (args) => {
+        const getData =  (args) => {
             const data = window.localStorage.getItem(args);
             return JSON.parse(data);
         }
@@ -56,10 +54,13 @@ document.addEventListener("click", function (arg) {
         const username = document.getElementById("usernameLogin");
         const password = document.getElementById("passwordLogin");
 
-        const data = getData("key");
-        console.log(data[0])
+        const data = getData("key")
+        
         if (data[0].email === username.value && data[0].password === password.value) {
+            alert("welcome")
             window.location.href = "/courses.html";
+        } else {
+            alert("password or email is wrog")
         }
     }
   })

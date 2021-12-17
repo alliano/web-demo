@@ -10,7 +10,7 @@ $(document).ready(function () {
         
         $('.nav-slide .list-slide ul li a').removeClass("active");
         $(this).addClass("active");
-
+        
         for (let i = 0; i < list.length; i++) {
             $(list[i]).click(function () {
                 if (i === 0) {
@@ -32,6 +32,12 @@ $(document).ready(function () {
                                 if (i === 4) {
                                     localStorage.setItem('page', 'sitemap');
                                     window.location.href = `sitemap.html`
+                                } else {
+                                    if (i === 5) {
+                                      
+                                        localStorage.setItem("page", "courseDetail");
+                                        window.location.href = "/courseDetail.html"
+                                    }
                                 }
                             }
                         }
@@ -69,7 +75,7 @@ $(document).ready(function () {
         "border" : "1px solid #000"
     })
     $('.play-vidio iframe').css({
-        "width" : "800px%",
+        "width" : "800px",
         "height": "700px",
         "border" : "2px solid aqua"
     })

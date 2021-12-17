@@ -53,12 +53,19 @@
                             <li><a class="${localStorage.getItem('page') === 'home' ? 'active' : ''} home" >Home</a></li>
                             <li><a class="${localStorage.getItem('page') === 'contac' ? 'active' : ''} contac">Contact</a></li>
                             <li><a class="${localStorage.getItem('page') === 'about' ? 'active' : ''} about">About</a></li>
-                            <li><a class="${localStorage.getItem('page') === 'courses' ? 'active' : ''}  courses" href="courses">Courses</a></li>
-                            <li><a href="#">Sitemap</a><are/li>
+                            <li><a class="${localStorage.getItem('page') === 'courses' ? 'active' : ''}  courses">Courses</a></li>
+                            <li><a class="${localStorage.getItem('page') === 'sitemap' ? 'active' : ''} sitemap ">Sitemap</a><are/li>
+                            <li><a class="${localStorage.getItem('page') === 'courseDetail' ? 'active' : ''} courseDetail">course detail</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>`;
+          
+                if (document.body.classList.contains("home")) {
+                    const b = document.getElementsByClassName('menu-toggle');
+                    console.log(b[0])
+                }
+               
             header[0].innerHTML = returnElements;
         })();
         
