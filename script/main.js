@@ -13,36 +13,64 @@ $(document).ready(function () {
         
         for (let i = 0; i < list.length; i++) {
             $(list[i]).click(function () {
-                if (i === 0) {
+                switch (i) {
+                case 0:
                     localStorage.setItem('page', 'index');
-                     window.location.href = `index.html`
-                } else {
-                    if (i === 1) {
-                        localStorage.setItem('page', 'contac');
-                        window.location.href = `contac.html`
-                    } else {
-                        if (i === 2) {
-                            localStorage.setItem('page', 'about');
-                            window.location.href = `About.html`
-                        } else {
-                            if (i === 3) {
-                                localStorage.setItem('page', 'courses');
-                                window.location.href = `courses.html`
-                            } else {
-                                if (i === 4) {
-                                    localStorage.setItem('page', 'sitemap');
-                                    window.location.href = `sitemap.html`
-                                } else {
-                                    if (i === 5) {
-                                      
-                                        localStorage.setItem("page", "courseDetail");
-                                        window.location.href = "/courseDetail.html"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                    window.location.href = `index.html`
+                    break;
+                case 1:
+                    localStorage.setItem('page', 'contac');
+                    window.location.href = `contac.html`
+                    break;
+                case 2:
+                    localStorage.setItem('page', 'about');
+                    window.location.href = `About.html`
+                    break;
+                case 3:
+                    localStorage.setItem('page', 'courses');
+                    window.location.href = `courses.html`
+                    break;
+                case 4:
+                    localStorage.setItem('page', 'sitemap');
+                    window.location.href = `sitemap.html`
+                    break;
+                case 5:
+                    localStorage.setItem("page", "courseDetail");
+                    window.location.href = "/courseDetail.html"
+                default:
+                    localStorage.setItem('page', 'index');
+                    window.location.href = `index.html`
+                    break;
+            }
+            //     if (i === 0) {
+            //         localStorage.setItem('page', 'index');
+            //          window.location.href = `index.html`
+            //     } else {
+            //         if (i === 1) {
+            //             localStorage.setItem('page', 'contac');
+            //             window.location.href = `contac.html`
+            //         } else {
+            //             if (i === 2) {
+            //                 localStorage.setItem('page', 'about');
+            //                 window.location.href = `About.html`
+            //             } else {
+            //                 if (i === 3) {
+            //                     localStorage.setItem('page', 'courses');
+            //                     window.location.href = `courses.html`
+            //                 } else {
+            //                     if (i === 4) {
+            //                         localStorage.setItem('page', 'sitemap');
+            //                         window.location.href = `sitemap.html`
+            //                     } else {
+            //                         if (i === 5) {
+            //                             localStorage.setItem("page", "courseDetail");
+            //                             window.location.href = "/courseDetail.html"
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
             })
             
         }

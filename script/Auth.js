@@ -1,9 +1,10 @@
+
 //////////////////////////////////////////////////
 ///Auth with Local storage and vanila js/////////
 ////////////////////////////////////////////////
 
 
-
+// methos save dta
 const getDAtaUser = (password,username,email) => {
     const saveToLocalStorage = [{
         password: password,
@@ -17,12 +18,12 @@ const getDAtaUser = (password,username,email) => {
 const save = (args) => {
     localStorage.setItem("key", args);
 }
-
+// get elemts data input
 const userNamae = document.getElementById('name');
 const Email = document.getElementById('Email');
 const password = document.getElementById('password');
 
-
+// if button register click
 document.addEventListener("click", function (args) {
 
     if (args.target.classList.contains("rengister")) {
@@ -35,7 +36,7 @@ document.addEventListener("click", function (args) {
             alert("password must be more than 8 caracthers");
             return false
         }
-        
+
     
         const data = getDAtaUser(passwordBuffer.join(""), userBuffer, emailBuffer);
         save(data);
@@ -45,6 +46,7 @@ document.addEventListener("click", function (args) {
      
 })
 
+// handle Login
 document.addEventListener("click", function (arg) {
     if (arg.target.classList.contains("login")) {
         const getData =  (args) => {
@@ -64,7 +66,7 @@ document.addEventListener("click", function (arg) {
             alert("password or email is wrog")
         }
     }
-  })
-
+})
+  
 
 
