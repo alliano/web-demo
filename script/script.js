@@ -1,7 +1,4 @@
 
-// let hash1 = hash('aku');
-
-// console.log(hash1);
 
 // async function hash(string) {
     //   const utf8 = new TextEncoder().encode(string);
@@ -15,17 +12,18 @@
     
     (function returnHeadEl() {
           const head = document.getElementsByTagName('head');
-        const newHeadElmts = `<meta charset="UTF-8">
-                                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-                                <link rel="preconnect" href="https://fonts.googleapis.com">
-                                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                                <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
-                                <link rel="preconnect" href="https://fonts.googleapis.com">
-                                <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>`;
+        const newHeadElmts = 
+        `<meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>`;
         
-        const afterTitle =      ` <!-- font logo -->
+        const afterTitle = ` <!-- font logo -->
         
                                 <link rel="preconnect" href="https://fonts.googleapis.com">
                                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,24 +69,25 @@
         
         (function () {
             const footer = document.getElementsByTagName('footer');
-            const ell = `<div class="ket">
-            <ul>
-            <h3>SiteMap</h3>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Sechdule</a></li>
-            <li><a href="#">Courses</a></li>
-            </ul>
-            <ul>
-            <h3>About developer</h3>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Tweeter</a></li>
-            </ul>
+            const ell = 
+            `<div class="ket">
+                <ul>
+                    <h3>SiteMap</h3>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="/contac.html">Contact</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="secdule.html">Sechdule</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                </ul>
+                <ul>
+                    <h3>About developer</h3>
+                    <li><a href="https://web.facebook.com/profile.php?id=100054791635002">Facebook</a></li>
+                    <li><a href="https://github.com/alliano?tab=repositories">Github</a></li>
+                    <li><a href="https://instagram.com/alliano361">Instagram</a></li>
+                    <li><a href="#">Tweeter</a></li>
+                </ul>
             </div>
             <div class="copyright"><h2>&copy;copyright2021</h2></div>`;
             footer[0].innerHTML = ell;
