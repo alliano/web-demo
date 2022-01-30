@@ -36,8 +36,8 @@
             const returnElements = `
             <nav>
                 <div class="core">
-                    <div id="logo"></div>
-                    <h1 id="nama">ABC CENTER</h1>
+                    <div class="logo"></div>
+                    <h1 class="nama">ABC CENTER</h1>
                 </div>
                 <div class="menu-toggle">
                     <input type="checkbox">

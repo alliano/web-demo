@@ -38,8 +38,6 @@ $(document).ready(function () {
                     localStorage.setItem("page", "courseDetail");
                     window.location.href = "/courseDetail.html"
                 default:
-                    localStorage.setItem('page', 'index');
-                    window.location.href = `index.html`
                     break;
             }
             //     if (i === 0) {

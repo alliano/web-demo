@@ -76,7 +76,7 @@ nav{
     /* border: 1px solid black; */
     /* background-color: aqua; */
 }
-.core #nama{
+.core .nama{
     align-items: center;
     display: flex;
     justify-content: center;
@@ -86,12 +86,14 @@ nav{
    font-weight: bold;
    top: 0;
 }
-#logo{
+.logo{
     height: 60px;
     width: 115px;
     background-image: url('img/logo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
+    /* border: 1px solid black; */
 }
 
 /* menu toggle */

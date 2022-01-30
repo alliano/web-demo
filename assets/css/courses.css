@@ -62,22 +62,63 @@
     /* border: 1px solid red; */
 }
 
-
-
-.tumbnail{
-    /* border: 2px solid black; */
+.card {
+    padding: 5px;
     display: flex;
-    /* flex-wrap: wrap; */
-    background-color: rgb(197, 197, 197);
-    height: 300px;
+    justify-content: space-around;
 }
-.tumbnail div{
+.card1 .content{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.card1 .content .img .gambar1{
+    background-image: url('img/java.png');
     height: 200px;
     width: 200px;
-    display: flex;
-    margin: auto;
-    
-
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card1 .content .img .gambar2{
+    background-image: url('img/ts.png');
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card1 .content .img .gambar3{
+    background-image: url('img/myql.png');
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card1 .content .img .gambar4{
+    background-image: url('img/js.png');
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card1 .content .text {
+    /* border: 1px solid black; */
+    background-color: #fff;
+    padding: 6px;
+}
+.card1 .content .text h1 {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    color: green;
+}
+.card1 .content .text p {
+    text-align: center;
+    color: rgb(64, 64, 65);
+}
+.card1 {
+    padding: 5px;
 }
 #tumbnail-title{
     margin-bottom: 50px;
@@ -88,15 +129,33 @@
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
 }
-.tumbnail .card{
+
+
+/* .tumbnail{
+    border: 2px solid black;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* background-color: rgb(197, 197, 197);
+    height: 300px;
+}
+.tumbnail div{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    margin: auto;
+}
+.card{
+    border: 1px solid black;
+} */ 
+/* .tumbnail .card{
     height: 220px;
     padding: 20px;
     border-radius: 20px;
     background-color: #fff;
     display: flex;
-    flex-direction: column;
-}
-.card #img1{
+    flex-direction: row;
+} */
+/* .card #img1{
     border-radius: 10px;
     position: relative;
     height: 190px;
@@ -132,9 +191,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.tumbnail a{
-    text-decoration: none;
-}
+
 .tumbnail h3{
     border-top: 1px solid #000;
     font-family: 'Rubik', sans-serif;
@@ -143,4 +200,4 @@
     margin-top: 10px; 
 }
 
-
+ */
