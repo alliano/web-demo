@@ -31,14 +31,14 @@ document.addEventListener("click", function (args) {
     
         const passwordBuffer = password.value.split("");
     
-        if (passwordBuffer.length < 10) {
+        if (passwordBuffer.length < 8) {
             alert("password must be more than 8 caracthers");
             return false
         }
     
         const data = getDAtaUser(passwordBuffer.join(""), userBuffer, emailBuffer);
         save(data);
-        window.location.href = "/courses.html";
+        window.location.href = "/welcome.page.html";
         
     }
      

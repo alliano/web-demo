@@ -1,0 +1,39 @@
+.container{
+    width: 100%;
+}
+.container .hero {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url('img/bg-courses.jpg');
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.jumbotron{
+    width: 500px;
+    padding: 10px;
+    height: 250px;
+    position: absolute;
+    /* border: 1px solid #fff; */
+    text-align: center;
+    margin: 0 auto;
+    top: 300px;
+    left: 400px;
+    box-sizing: border-box;
+}
+.jumbotron h3{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.jumbotron span {
+    color: #fff;
+    background-color: transparent;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+.jumbotron span:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}

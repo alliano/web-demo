@@ -136,3 +136,79 @@
     background-size: cover;
     background-image: url('img/dicoding.png');
 }
+
+.rate{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.7);
+    margin-top: 100px;
+}
+.rate h1 {
+    font-size: 40px;
+}
+.mentors{
+    border-left-color: #fff;
+    width: 700px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 50px auto;
+   
+}
+.mentors .rectralage{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mentors .person {
+    width: 300px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 24px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.mentors .frame{
+    height: 250px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.mentors .kata{
+    /* border: 1px  solid black; */
+    padding: 10px;
+}
+.kata h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.kata .button {
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    width: 100px;
+    background-color: lightblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.kata .button:hover{
+    background-color: #fff;
+}
+.mentors .person .gambar{
+    margin: 0 auto;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    width: 230px;
+    height: 230px;
+    background-image: url('img/cv.png');
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.mentors h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
