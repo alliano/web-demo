@@ -20,6 +20,8 @@ document.addEventListener("click", (e) => {
 })
 
 
+
+
 let greet = "Hallo!! thank you for join to us";
 let index = 0;
 const tyepe = () => {

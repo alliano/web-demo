@@ -44,21 +44,41 @@
 .kotak1{
     background-color: yellow;
     width: max-content;
+    background-image: url('img/js.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
     /* border: 1px solid red; */
 }
 .kotak2{
     background-color: indigo;
     width: max-content;
+    background-image: url('img/php.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
     /* border: 1px solid red; */
 }
 .kotak3{
     background-color: #fff;
     width: max-content;
+    background-image: url('img/ts.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
     /* border: 1px solid red; */
 }
 .kotak4{
-    background-color: skyblue;
+    background-color: #fff;
     width: max-content;
+    background-image: url('img/myql.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
     /* border: 1px solid red; */
 }
 
