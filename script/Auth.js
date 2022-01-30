@@ -35,6 +35,7 @@ document.addEventListener("click", function (args) {
             alert("password must be more than 8 caracthers");
             return false
         }
+        
     
         const data = getDAtaUser(passwordBuffer.join(""), userBuffer, emailBuffer);
         save(data);
