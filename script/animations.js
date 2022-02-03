@@ -20,8 +20,6 @@ document.addEventListener("click", (e) => {
 })
 
 
-
-
 let greet = "Hallo!! thank you for join to us";
 let index = 0;
 const tyepe = () => {
@@ -38,3 +36,12 @@ const tyepe = () => {
     }
 }
 tyepe();
+
+let a = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(console.log("OKAY"))
+    }, 3000)
+});
+ cek = async () => {
+    await console.log(a)
+}
