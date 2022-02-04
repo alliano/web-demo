@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
+    <title>Admin</title>
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+    <header></header>
+    <div class="table">
+        <div class="rectalage">
+            <div class="formAdd">
+                <div class="input">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name" placeholder="name" required>
+                </div>
+                <div class="input">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                </div>
+                <div class="input">
+                    <label for="password">password</label>
+                    <input type="text" name="password" id="password" placeholder="password" required>
+                </div>
+                <div class="spn">
+                    <span class="add sp">add</span>
+                    <span style="margin-left: 5px;" class="cancel sp">cancel</span>
+                </div>
+            </div>
+
+
+
+            <div class="formUpdate">
+                <div class="input">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="nameUp" placeholder="name" required>
+                </div>
+                <div class="input">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="emailUp" placeholder="email" required>
+                </div>
+                <div class="input">
+                    <label for="password">password</label>
+                    <input type="text" name="password" id="passwordUp" placeholder="password" required>
+                </div>
+                <div class="spn">
+                    <span class="edit sp">edit</span>
+                    <span class="cancel sp">cancel</span>
+                </div>
+            </div>
+
+
+
+
+            <div class="content">
+                <button class="addData">add data</button>
+                <table border="1" cellpadding="5">
+                    <thead>
+                        <tr>
+                            <td>no</td>
+                            <td>name</td>
+                            <td>email</td>
+                            <td>password</td>
+                            <td>action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="../script/animations.js"></script>
+    <script src="../script/admin.js"></script>
+</body>
+</html>
