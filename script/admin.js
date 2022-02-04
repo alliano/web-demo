@@ -36,16 +36,8 @@ const storage = (data) => {
 ---------------
 */
 
-const getdata = () => {
-    let index = 0;
-    let datas = Array()
-    while (index < localStorage.length) {
-        index++;
+const getdata = () =>  JSON.parse(window.localStorage.getItem(`users`));
 
-        datas.push(JSON.parse(window.localStorage.getItem(`users`)));
-    }
-    return datas[0];
-}
 
 
 /*
@@ -58,7 +50,7 @@ const getdata = () => {
 const table = () => {
     let template = ``;
     const datas = getdata();
-    if (datas !== undefined) {
+    if (datas !== undefined || datas !== null) {
         datas.forEach((item, index) => {
             template +=
                 `
@@ -109,29 +101,29 @@ addDta.addEventListener("click", function () {
     cancel(fromAdd);
     
     document.addEventListener("click", (e) => {
-        let data = { name: nama.value, email: email.value, password: pass.value };
-        console.log(data)
-        console.log(nama.value === "" ? "iya kosong" : "ada");
-        if (e.target.classList.contains("add")) {
-            if (nama.value === "" && email.value === "" && pass.value === "") alert("field canot empty");
-            if (nama.value !== "" && email.value !== "" && pass.value !== "") {
-                fromAdd.style.display = "none";
-                content.style.display = "block";
-                
-                let query = getdata();
-                if (query === undefined) storage(data); tBody.innerHTML = table();
-                if (query !== undefined) {
-                    query.push(data);
-                    console.log(query);
-                    window.localStorage.setItem("users", JSON.stringify(query));
-                    tBody.innerHTML = table();
-                }
-            }
-                
-            }
-        })
-    
+           let data = { name: nama.value, email: email.value, password: pass.value };
+           console.log(nama.value === "" ? "iya kosong" : "ada");
+           if (e.target.classList.contains("add")) {
+               if (nama.value === "" && email.value === "" && pass.value === "") alert("field canot be empty");
+               if (nama.value !== "" && email.value !== "" && pass.value !== "") {
+                   
+                   let query = getdata();
+                   if (query === undefined) storage(data); tBody.innerHTML = table();
+                   if (query !== undefined) {
+                       query.push(data);
+                       console.log(query);
+                       window.localStorage.setItem("users", JSON.stringify(query));
+                       tBody.innerHTML = table();
+
+                       fromAdd.style.display = "none";
+                       content.style.display = "block";
+                   }
+               }
+                   
+               }
+           })
 })
+
 
 
 /*
