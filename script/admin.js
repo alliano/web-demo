@@ -1,3 +1,4 @@
+window.localStorage.setItem("users",JSON.stringify([]))
 // add
 const nama = document.getElementById("name");//fils name
 const email = document.getElementById("email");//dield email
