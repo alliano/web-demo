@@ -17,8 +17,8 @@ const auth = JSON.parse(window.localStorage.getItem("admin"));
 
 document.addEventListener("click", function (args) {
     if (args.target.classList.contains("LoginAdmin")) {
-        if (userNamaeA === auth.name && EmailA === auth.email && passwordA === auth.password) alert("weelcome admin"); window.location.href = "/admin.html";
         if (userNamaeA !== auth.name && EmailA !== auth.email && passwordA !== auth.password) alert("password or email wrong");
+        if (userNamaeA === auth.name && EmailA === auth.email && passwordA === auth.password) alert("weelcome admin"); window.location.href = "/admin.html";
         
     }
 
