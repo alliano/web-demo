@@ -2,13 +2,14 @@
 //////////////////////////////////////////////////
 ///Auth with Local storage and vanila js/////////
 ////////////////////////////////////////////////
+if (window.localStorage.getItem("users") === null || window.localStorage.getItem("users") === undefined)window.localStorage.setItem("users",JSON.stringify([]))
 
 
 // methos save dta
 const getDAtaUser = (password,username,email) => {
     const saveToLocalStorage = [{
+        name: username,
         password: password,
-        username: username,
         email: email
     }];
 
@@ -16,7 +17,7 @@ const getDAtaUser = (password,username,email) => {
     return data;
 }
 const save = (args) => {
-    localStorage.setItem("key", args);
+    localStorage.setItem("users", args);
 }
 // get elemts data input
 const userNamae = document.getElementById('name');
@@ -39,7 +40,12 @@ document.addEventListener("click", function (args) {
 
     
         const data = getDAtaUser(passwordBuffer.join(""), userBuffer, emailBuffer);
-        save(data);
+        let placeholder = JSON.parse(data);
+        let getToLocsls = JSON.parse(window.localStorage.getItem("users"));
+        getToLocsls.push(placeholder);
+    
+    
+        save(JSON.stringify(getToLocsls[0]));
         window.location.href = "/welcome.page.html";
         
     }
@@ -57,7 +63,7 @@ document.addEventListener("click", function (arg) {
         const username = document.getElementById("usernameLogin");
         const password = document.getElementById("passwordLogin");
 
-        const data = getData("key")
+        const data = getData("users")
         
         if (data[0].email === username.value && data[0].password === password.value) {
             alert("welcome")
@@ -67,6 +73,4 @@ document.addEventListener("click", function (arg) {
         }
     }
 })
-  
-
 

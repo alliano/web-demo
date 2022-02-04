@@ -1,4 +1,6 @@
-window.localStorage.setItem("users",JSON.stringify([]))
+
+if (window.localStorage.getItem("users") === null || window.localStorage.getItem("users") === undefined)window.localStorage.setItem("users",JSON.stringify([]))
+
 // add
 const nama = document.getElementById("name");//fils name
 const email = document.getElementById("email");//dield email
