@@ -126,7 +126,7 @@
     width: 145px;
     background-size: cover;
     background-image: url('img/linux.png');
-    background-position: 0 0;
+    background-position: cover;
     background-repeat: no-repeat;
 }
 .img6{
