@@ -9,7 +9,7 @@
     //     .join('');
     //   return hashHex;
     // }
-    
+    if (window.localStorage.getItem("users") === null || window.localStorage.getItem("users") === undefined)window.localStorage.setItem("users",JSON.stringify([]))
     (function returnHeadEl() {
           const head = document.getElementsByTagName('head');
         const newHeadElmts = 

@@ -4,8 +4,8 @@
 
 
 // take name
-const nme = document.getElementById("name").value;
-
+// const nme = JSON.parse(localStorage.getItem("users"));
+// console.log(nme[0].name)
 
 // buton in welcome page
 // if logo on click
@@ -29,7 +29,7 @@ document.addEventListener("click", (e) => {
 })
 
 
-let greet = `Hallo!!, ${nme} thank you for join to us`;
+let greet = `Hallo!!, thank you for join to us`;
 let index = 0;
 const tyepe = () => {
     if (index < greet.length) {

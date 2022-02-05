@@ -1,3 +1,4 @@
+if (window.localStorage.getItem("users") === null || window.localStorage.getItem("users") === undefined)window.localStorage.setItem("users",JSON.stringify([]))
 $(document).ready(function () {
     $('.menu-toggle input').click(function () {
         $('.nav-slide').slideToggle(500);
