@@ -70,6 +70,7 @@ document.addEventListener("click", function (arg) {
             window.location.href = "/courses.html";
         } else {
             alert("password or email is wrog")
+            console.log(data)
         }
     }
 })
