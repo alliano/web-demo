@@ -1,3 +1,12 @@
+
+
+
+
+
+// take name
+const nme = document.getElementById("name").value;
+
+
 // buton in welcome page
 // if logo on click
 document.addEventListener("click", (e) => {
@@ -20,7 +29,7 @@ document.addEventListener("click", (e) => {
 })
 
 
-let greet = "Hallo!! thank you for join to us";
+let greet = `Hallo!!, ${nme} thank you for join to us`;
 let index = 0;
 const tyepe = () => {
     if (index < greet.length) {
