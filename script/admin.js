@@ -1,4 +1,6 @@
 
+
+
 if (window.localStorage.getItem("users") === null || window.localStorage.getItem("users") === undefined)window.localStorage.setItem("users",JSON.stringify([]))
 
 // add
@@ -103,7 +105,8 @@ addDta.addEventListener("click", function () {
     pass.value = "";
     cancel(fromAdd);
     
-    document.addEventListener("click", (e) => {
+})
+ document.addEventListener("click", (e) => {
            let data = { name: nama.value, email: email.value, password: pass.value };
            console.log(nama.value === "" ? "iya kosong" : "ada");
            if (e.target.classList.contains("add")) {
@@ -111,8 +114,8 @@ addDta.addEventListener("click", function () {
                if (nama.value !== "" && email.value !== "" && pass.value !== "") {
                    
                    let query = getdata();
-                   if (query === undefined) storage(data); tBody.innerHTML = table();
-                   if (query !== undefined) {
+                   if (typeof(query) === undefined) storage(data); tBody.innerHTML = table();
+                   if (typeof(query) !== undefined) {
                        query.push(data);
                        console.log(query);
                        window.localStorage.setItem("users", JSON.stringify(query));
@@ -125,8 +128,6 @@ addDta.addEventListener("click", function () {
                    
                }
            })
-})
-
 
 
 /*
@@ -163,7 +164,9 @@ const edit = (id) => {
     passUp.value = dumy[id].password;
 
     cancel(fromUpdate);
-    document.addEventListener("click", function (el) {
+}
+
+ document.addEventListener("click", function (el) {
         if (el.target.classList.contains("edit")) {
             let newData = {
                 name: namaUp.value,
@@ -177,7 +180,6 @@ const edit = (id) => {
             fromUpdate.style.display = "none";
         }
     })
-}
 
 
 // cancel 
