@@ -164,22 +164,25 @@ const edit = (id) => {
     passUp.value = dumy[id].password;
 
     cancel(fromUpdate);
+    document.addEventListener("click", function (el) {
+        if (el.target.classList.contains("edit")) {
+           const dumy = JSON.parse(window.localStorage.getItem("users")); 
+           content.style.display = "none";
+           fromUpdate.style.display = "flex"
+               let newData = {
+                   name: namaUp.value,
+                   email: emailUp.value,
+                   password:passUp.value,
+               }
+               dumy.splice(id, 1, newData);
+               if (namaUp === "" && emailUp === "" && passUp === "") alert("field canot be empty");
+               if (namaUp !== "" && emailUp !== "" && passUp !== "") window.localStorage.setItem("users", JSON.stringify(dumy)); tBody.innerHTML = table();
+               content.style.display = "block";
+               fromUpdate.style.display = "none";
+           }
+       })
 }
 
- document.addEventListener("click", function (el) {
-        if (el.target.classList.contains("edit")) {
-            let newData = {
-                name: namaUp.value,
-                email: emailUp.value,
-                password:passUp.value,
-            }
-            dumy.splice(id, 1, newData);
-            if (namaUp === "" && emailUp === "" && passUp === "") alert("field canot be empty");
-            if (namaUp !== "" && emailUp !== "" && passUp !== "") window.localStorage.setItem("users", JSON.stringify(dumy)); tBody.innerHTML = table();
-            content.style.display = "block";
-            fromUpdate.style.display = "none";
-        }
-    })
 
 
 // cancel 
@@ -191,3 +194,22 @@ const cancel = (form) => {
         }
     })
 }
+
+
+
+
+// let data = [
+//     {
+//         name: "allinao",
+//         password: "123456787"
+//     },
+//     {
+//         name: "gtw",
+//         password: "jajjajja"
+//     },
+//     {
+//         name: "friska",
+//         password: "123456787"
+//     }
+// ];
+

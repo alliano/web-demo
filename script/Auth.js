@@ -63,15 +63,28 @@ document.addEventListener("click", function (arg) {
         const username = document.getElementById("usernameLogin");
         const password = document.getElementById("passwordLogin");
 
-        const data = getData("users")
-        
-        if (data[0].email === username.value && data[0].password === password.value) {
-            alert("welcome")
-            window.location.href = "/courses.html";
+        const data = getData("users");
+
+        if (username.value === data[0].email && password.value === data[0].password) {
+            alert("welcome");
+            window.location.href = "./courses.html"
         } else {
-            alert("password or email is wrog")
-            console.log(data)
+            alert("your password or email is wrong")
         }
+
+
+    //     let users = [["tes", "tek"]]
+    //     let nama;
+    //     data.forEach(item => users.push([item.email, item.password]));
+    //     let tes = users.forEach(item => {
+            
+    //         nama = item.find((e) => {
+    //             console.log(e)
+    //            return e === "tes"
+    //        })
+    //     })
+    //    console.log(nama)
+        
     }
 })
 
